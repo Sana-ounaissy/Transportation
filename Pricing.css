@@ -3,9 +3,12 @@ body, .jumbotron {
   }
   body {
    
-    background-image:url("./Assets/rd.jpg");
-
+    background-image:url("./Assets/mapp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+  
+  
   .jumbotron {
     padding: 0px;
     width:40%;
@@ -24,9 +27,10 @@ body, .jumbotron {
   .form-control{
       color: #ffcb15;
   }
-  form{
-    
-    background-color: rgba(82, 84, 83, 0.436);
-    width:50%;
-     
-  }
+  form{ 
+   margin-left: 520px;
+   width:400px;
+   background-color:#ffff;
+  
+   height: 420px;
+      }

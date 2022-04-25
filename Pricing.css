@@ -1,0 +1,36 @@
+body, .jumbotron { 
+    padding: 30px;
+  }
+  body {
+   
+    background-image:url("./Assets/mapp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  .jumbotron {
+    padding: 0px;
+    width:40%;
+    height:100%;
+  }
+  .text-giant { 
+    font-size: 40px; 
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  label {
+    font-size: 20px;
+  }
+  .form-control{
+      color: #ffcb15;
+  }
+  form{ 
+   margin-left: 520px;
+   width:400px;
+   background-color:#ffff;
+  
+   height: 420px;
+      }

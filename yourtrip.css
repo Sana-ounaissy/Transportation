@@ -1,0 +1,51 @@
+
+.btn:focus { 
+    outline: none !important;
+    border-color: #ffc107 !important;
+    box-shadow: 0 0 7px #ffc107 !important;
+  }
+  .btn:hover{
+    border-color: #ffc107;
+  }
+  .accordion-button{
+    outline: none !important;
+    border-color: #ffc107 !important;
+    box-shadow: 0 0 7px #ffc107 !important;
+  }
+.accordion-item{
+  outline: none !important;
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 7px #ffc107 !important;
+}
+.card{
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+button.accordion-button:focus{
+  background-color:#fff;
+  color: black;
+}
+button.accordion-button:hover{
+  background-color:#fff;
+  color: black;
+}
+button.accordion-button{
+  background-color:#fff;
+  color: black;
+}
+h2.accordion-header{
+  background-color:#fff;
+  color: black;
+}
+button.accordion-button.collapsed:focus{
+  background-color:#fff !important;
+  color: black !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1) !important; /* IE 9 */
+  -webkit-transform: scale(1.1) !important; /* Safari 3-8 */
+  transform: scale(1.1) !important; 
+}

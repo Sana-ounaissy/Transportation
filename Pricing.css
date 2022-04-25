@@ -1,0 +1,32 @@
+body, .jumbotron { 
+    padding: 30px;
+  }
+  body {
+   
+    background-image:url("./Assets/rd.jpg");
+
+  }
+  .jumbotron {
+    padding: 0px;
+    width:40%;
+    height:100%;
+  }
+  .text-giant { 
+    font-size: 40px; 
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  label {
+    font-size: 20px;
+  }
+  .form-control{
+      color: #ffcb15;
+  }
+  form{
+    
+    background-color: rgba(82, 84, 83, 0.436);
+    width:50%;
+     
+  }

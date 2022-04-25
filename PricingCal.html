@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="Pricing.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-between"> 
+    <form >
+    <div class="row row-space">
+        <div class="col-8">
+            <label class="label" style="color: #ffff;">Are you willing to use a conditioned vehicle (AC) ?</label>
+            <div class="p-t-10">
+                <label class="radio-container m-r-45" style="color: #ffff;">Yes
+                    <input type="radio" checked="checked" name="AC">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">No
+                    <input type="radio" name="AC">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="row row-space">
+        <div class="col-12">
+            <label class="label" style="color: #ffff;">Are you willing to use a vehiclew with wifi ?</label>
+            <div class="p-t-10">
+                <label class="radio-container m-r-45">Yes
+                    <input type="radio" checked="checked" name="WIFI">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">No
+                    <input type="radio" name="WIFI">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+    <div class="jumbotron">
+        
+        <h3 style="color:#ffff">Distance you are willing to travel with us</h3>
+
+        <form>
+            <div class="form-group">
+                <input type="hidden" class="form-control" name="price" value="0.028">
+            </div>
+
+            <div class="form-group">
+                <label for="quantity" style="color: #ffff;">
+                    <span class="quantity-label" style="color: #ffff;">1</span> Km
+                </label>
+                <input type="range" class="form-control" name="quantity" value="100" min="100" max="10000" step="100">
+            </div>
+        </form>
+
+        <div class="text-right text-giant total"></div>
+  <h4 style="float:right;"></h4>
+
+    </div>
+</form></div>
+  <script>
+      const priceInput = document.querySelector('[name=price]');
+        const quantityInput = document.querySelector('[name=quantity]');
+        const total = document.querySelector('.total');
+        const quantityLabel = document.querySelector('.quantity-label');
+
+
+        // create the functions that we'll need
+        function calculatePieCost() {
+            const price = priceInput.value;
+            const quantity = quantityInput.value;
+            const cost = price * quantity;
+            console.log(cost);
+            total.innerText =  cost.toFixed(2) + ' $';
+        }
+
+
+        function updateQuantityLabel() {
+            const quantity = quantityInput.value;
+            quantityLabel.innerText = quantity;
+        }
+
+        // on first run
+        calculatePieCost();
+
+
+
+        // add our event listeners
+        priceInput.addEventListener('input', calculatePieCost);
+        quantityInput.addEventListener('input', calculatePieCost);
+        quantityInput.addEventListener('input', updateQuantityLabel);
+
+</script>
+</body>
+</html>

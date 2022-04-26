@@ -33,69 +33,7 @@
 /**
 * Desktop Navigation 
 */
-.navbar {
-  padding: 0;
-}
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-.navbar li {
-  position: relative;
-}
-.navbar a,
-.navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  color: #fff;
-  font-size: 20px;
-  white-space: nowrap;
-  transition: 0.3s;
-}
-.navbar a i,
-.navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover > a {
-  color: #ffc107;
-}
 
-/* ==========================================================================
-   #PAGE WRAPPER
-   ========================================================================== */
-.page-wrapper {
-  min-height: 100vh;
-}
-
-body {
-  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  background-image: url(Assets/txi.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body:before {
-  content: "";
-  background: rgba(51, 51, 52, 0.833);
-  position: absolute;
-  width: 100%;
-  height: 115%;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
 .input-group {
   position: relative;
@@ -260,25 +198,6 @@ button {
   min-height: 100vh;
 }
 
-body {
-  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  background-image: url(assets/txi.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body:before {
-  content: "";
-  background: rgba(51, 51, 52, 0.833);
-  position: absolute;
-  width: 100%;
-  height: 115%;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
 h1,
 h2,

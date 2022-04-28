@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
  #header {
-  transition: all 0.5s;
+  transition: all 0.5s;  
   z-index: 997;
   padding: 20px 0;
   background: rgba(55, 64, 85, 0.9);
@@ -146,7 +146,7 @@ body {
   
     width: 100%;
   height: 80vh;
-  background: url("Assets/txi.jpg") top center;
+  background: url("Assets/rain.jpg") top center;
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
@@ -154,17 +154,7 @@ body {
  
 
 /* I ADDED CHANGEs HEREEEEEEEEE */
-#ftco-section:before {
-  content: "";
-  background: rgb(16, 17, 20);
-  position: absolute;
- width: 500%;
- height: 130%;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+
 
 
 
@@ -1477,6 +1467,8 @@ pre code {
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.619);
   }
   .col-lg-5 {
     -webkit-box-flex: 0;
@@ -10721,28 +10713,8 @@ body {
   z-index: 0;
   padding: 0;
 }
-body:before {
-  content: "";
-  background: rgba(51, 51, 52, 0.833);
-  position: absolute;
- width: 200%;
- height: 122%;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-body:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
-  background: #000;
-  opacity: 0.3;
-  z-index: -1;
-}
+
+
 
 a {
   -webkit-transition: 0.3s all ease;

@@ -94,3 +94,33 @@ function check(){
         alert('Error on login');
     }
 }
+// hon bs yfut l driver  3al edit profile bytl3lo l ma3lumet l da5ala b signUp w fi y3mela edit
+function editProfileDriver(){
+
+    document.getElementById("_InputEmail").placeholder=localStorage.getItem('_Email');
+    document.getElementById("_InputFirstName").placeholder=localStorage.getItem('_FirstName');
+    document.getElementById("_InputLastName").placeholder=localStorage.getItem('_LastName');
+    document.getElementById("_InputPhoneNumber").placeholder=localStorage.getItem('_PhoneNumber');
+    document.getElementById("_InputBirthday").placeholder=localStorage.getItem('_Birthday');
+}
+// hayde l function bs y8ayer shi l driver byn3amal update
+function updatedProfileDriver(){
+
+    let UpdatedEmail=document.getElementById("_InputEmail");
+    let UpdatedFirstName=document.getElementById("_InputFirstName");
+    let UpdatedLastName=document.getElementById("_InputLastName");
+    let UpdatedPhoneNumber=document.getElementById("_InputPhoneNumber");
+    let UpdatedBirthday=document.getElementById("_InputBirthday");
+    if( UpdatedEmail.value!=""){ localStorage.setItem('_Email', UpdatedEmail.value)}
+   else if(UpdatedFirstName.value!=""){ localStorage.setItem('_FirstName', UpdatedFirstName.value)}
+   else if(UpdatedLastName.value!=""){localStorage.setItem('_LastName', UpdatedLastName.value)}
+   else if(UpdatedPhoneNumber.value!="") {localStorage.setItem('_PhoneNumber', UpdatedPhoneNumber.value)}
+    else if (UpdatedBirthday.value!="") { localStorage.setItem('_Birthday', UpdatedBirthday.value)}
+   
+ {
+    console.log(localStorage.getItem("_Email"));
+    console.log(localStorage.getItem("_FirstName"));
+    console.log(localStorage.getItem("_LastName"));
+    console.log(localStorage.getItem("_PhoneNumber"));
+    console.log(localStorage.getItem("_Birthday"));}
+}

@@ -31,12 +31,13 @@
                     <div class="card-header">Profile Picture</div>
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
-                        <img class="img-account-profile rounded-circle mb-2"
+                        <img id="passengerpp" class="img-account-profile rounded-circle mb-2"
                             src="http://bootdey.com/img/Content/avatar/avatar5.png" alt="">
                         <!-- Profile picture help block-->
                         <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
                         <!-- Profile picture upload button-->
-                        <input type="file" class="form-control" id="customFile" />
+                        <input type="file" class="form-control" id="customFile"
+                            onchange="document.getElementById('passengerpp').src = window.URL.createObjectURL(this.files[0])" />
                     </div>
                 </div>
 

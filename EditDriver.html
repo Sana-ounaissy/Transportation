@@ -33,12 +33,13 @@
                     <div class="card-header">Profile Picture</div>
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
-                        <img class="img-account-profile rounded-circle mb-2"
+                        <img id="driverpp" class="img-account-profile rounded-circle mb-2"
                             src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
                         <!-- Profile picture help block-->
                         <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
                         <!-- Profile picture upload button-->
-                        <input type="file" class="form-control" id="customFile" />
+                        <input type="file" class="form-control" id="customFile"
+                            onchange="document.getElementById('driverpp').src = window.URL.createObjectURL(this.files[0])" />
                     </div>
                 </div>
 
@@ -65,7 +66,8 @@
                             <!-- Form Group (username)-->
                             <div class="mb-3">
                                 <label class="small mb-1" for="inputUsername">Email</label>
-                                <input class="form-control" id="_InputEmail" type="Email" placeholder="Enter your Email">
+                                <input class="form-control" id="_InputEmail" type="Email"
+                                    placeholder="Enter your Email">
                             </div>
                             <!-- Form Row-->
                             <div class="row gx-3 mb-3">
@@ -83,7 +85,7 @@
                                 </div>
                             </div>
                             <!-- Form Row        -->
-                            
+
                             <!-- Form Row-->
                             <div class="row gx-3 mb-3">
                                 <!-- Form Group (phone number)-->
@@ -100,14 +102,14 @@
                                 </div>
                             </div>
                             <!-- Save changes button-->
-                            <button onclick="updatedProfileDriver()" class="btn btn-outline-dark" >Save changes</button>
+                            <button onclick="updatedProfileDriver()" class="btn btn-outline-dark">Save changes</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<script  src="SignUp.js"></script>
+    <script src="SignUp.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

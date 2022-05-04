@@ -13,7 +13,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="editProfilePassenger()">
 
     <div class="container-xl px-4 mt-4">
         <header id="header" class=" fixed-top header-transparent">
@@ -50,62 +50,44 @@
                             <!-- Form Group (username)-->
                             <div class="mb-3">
                                 <label class="small mb-1" for="inputUsername">Email</label>
-                                <input class="form-control" id="inputEmail" type="Email" placeholder="Enter your Email">
+                                <input class="form-control" id="_InputEmailP" type="Email"
+                                    placeholder="Enter your Email">
                             </div>
                             <!-- Form Row-->
                             <div class="row gx-3 mb-3">
                                 <!-- Form Group (first name)-->
                                 <div class="col-md-6">
                                     <label class="small mb-1" for="inputFirstName">First name</label>
-                                    <input class="form-control" id="inputFirstName" type="text"
+                                    <input class="form-control" id="_InputFirstNameP" type="text"
                                         placeholder="Enter your first name">
                                 </div>
                                 <!-- Form Group (last name)-->
                                 <div class="col-md-6">
                                     <label class="small mb-1" for="inputLastName">Last name</label>
-                                    <input class="form-control" id="inputLastName" type="text"
+                                    <input class="form-control" id="_InputLastNameP" type="text"
                                         placeholder="Enter your last name">
                                 </div>
                             </div>
                             <!-- Form Row        -->
-                            <div class="row gx-3 mb-3">
-                                <!-- Form Group (organization name)-->
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="inputOrgName">Gender</label>
-                                    <br>
-                                    <label>Male
-                                        <input type="radio" checked="checked" name="Gender">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label>Female
-                                        <input type="radio" name="Gender">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <!-- Form Group (location)-->
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="inputLocation">Adress</label>
-                                    <input class="form-control" id="inputAdress" type="text"
-                                        placeholder="Enter your Adress">
-                                </div>
-                            </div>
+
                             <!-- Form Row-->
                             <div class="row gx-3 mb-3">
                                 <!-- Form Group (phone number)-->
                                 <div class="col-md-6">
                                     <label class="small mb-1" for="inputPhone">Phone number</label>
-                                    <input class="form-control" id="inputPhone" type="tel"
+                                    <input class="form-control" id="_InputPhoneNumberP" type="tel"
                                         placeholder="Enter your phone number">
                                 </div>
                                 <!-- Form Group (birthday)-->
                                 <div class="col-md-6">
                                     <label class="small mb-1" for="inputBirthday">Birthday</label>
-                                    <input class="form-control" id="inputBirthday" type="text" name="birthday"
+                                    <input class="form-control" id="_InputBirthdayP" type="text" name="birthday"
                                         placeholder="Enter your birthday">
                                 </div>
                             </div>
                             <!-- Save changes button-->
-                            <button class="btn btn-outline-dark" type="button">Save changes</button>
+                            <button onclick="updatedProfilePassenger()" class="btn btn-outline-dark" type="button">Save
+                                changes</button>
                         </form>
                     </div>
                 </div>
@@ -113,7 +95,9 @@
         </div>
     </div>
 
+    <script src="SignUp.js">
 
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

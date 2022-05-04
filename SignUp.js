@@ -124,3 +124,34 @@ function updatedProfileDriver(){
     console.log(localStorage.getItem("_PhoneNumber"));
     console.log(localStorage.getItem("_Birthday"));}
 }
+
+
+function editProfilePassenger(){
+
+    document.getElementById("_InputEmailP").placeholder=localStorage.getItem('_Email');
+    document.getElementById("_InputFirstNameP").placeholder=localStorage.getItem('_FirstName');
+    document.getElementById("_InputLastNameP").placeholder=localStorage.getItem('_LastName');
+    document.getElementById("_InputPhoneNumberP").placeholder=localStorage.getItem('_PhoneNumber');
+    document.getElementById("_InputBirthdayP").placeholder=localStorage.getItem('_Birthday');
+}
+// hayde l function bs y8ayer shi l driver byn3amal update
+function updatedProfilePassenger(){
+
+    let UpdatedEmailP=document.getElementById("_InputEmailP");
+    let UpdatedFirstNameP=document.getElementById("_InputFirstNameP");
+    let UpdatedLastNameP=document.getElementById("_InputLastNameP");
+    let UpdatedPhoneNumberP=document.getElementById("_InputPhoneNumberP");
+    let UpdatedBirthdayP=document.getElementById("_InputBirthdayP");
+    if( UpdatedEmailP.value!=""){ localStorage.setItem('_Email', UpdatedEmailP.value)}
+   if(UpdatedFirstNameP.value!=""){ localStorage.setItem('_FirstName', UpdatedFirstNameP.value)}
+    if(UpdatedLastNameP.value!=""){localStorage.setItem('_LastName', UpdatedLastNameP.value)}
+    if(UpdatedPhoneNumberP.value!="") {localStorage.setItem('_PhoneNumber', UpdatedPhoneNumberP.value)}
+     if (UpdatedBirthdayP.value!="") { localStorage.setItem('_Birthday', UpdatedBirthdayP.value)}
+   
+ {
+    console.log(localStorage.getItem("_Email"));
+    console.log(localStorage.getItem("_FirstName"));
+    console.log(localStorage.getItem("_LastName"));
+    console.log(localStorage.getItem("_PhoneNumber"));
+    console.log(localStorage.getItem("_Birthday"));}
+}

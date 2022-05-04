@@ -112,10 +112,10 @@ function updatedProfileDriver(){
     let UpdatedPhoneNumber=document.getElementById("_InputPhoneNumber");
     let UpdatedBirthday=document.getElementById("_InputBirthday");
     if( UpdatedEmail.value!=""){ localStorage.setItem('_Email', UpdatedEmail.value)}
-   else if(UpdatedFirstName.value!=""){ localStorage.setItem('_FirstName', UpdatedFirstName.value)}
-   else if(UpdatedLastName.value!=""){localStorage.setItem('_LastName', UpdatedLastName.value)}
-   else if(UpdatedPhoneNumber.value!="") {localStorage.setItem('_PhoneNumber', UpdatedPhoneNumber.value)}
-    else if (UpdatedBirthday.value!="") { localStorage.setItem('_Birthday', UpdatedBirthday.value)}
+    if(UpdatedFirstName.value!=""){ localStorage.setItem('_FirstName', UpdatedFirstName.value)}
+    if(UpdatedLastName.value!=""){localStorage.setItem('_LastName', UpdatedLastName.value)}
+    if(UpdatedPhoneNumber.value!="") {localStorage.setItem('_PhoneNumber', UpdatedPhoneNumber.value)}
+    if (UpdatedBirthday.value!="") { localStorage.setItem('_Birthday', UpdatedBirthday.value)}
    
  {
     console.log(localStorage.getItem("_Email"));

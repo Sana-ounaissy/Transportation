@@ -1,0 +1,146 @@
+/* The side navigation menu */
+.sidebar {
+  background-color: #f1f1f1;
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color:  #ffc107;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color:grey;
+  color: white;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  border-color: #ffc107 !important;
+  background-color:#e6eaec !important;
+}
+
+.btn:hover{
+  border-color: #ffc107;
+}
+.btn:focus { 
+  outline: none !important;
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 7px #ffc107 !important;
+}
+input:focus{
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 7px #ffc107 !important;
+}
+.btn{
+  float: right;
+  margin-right: 4px;
+   
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Add padding and center-align text to the container */
+.container {
+  text-align: center;
+}
+
+
+
+body > table{
+    width: 80% !important;
+    margin: auto;
+}
+
+
+table{
+    border-collapse: collapse;
+}
+
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number], input[type=datetime-local]  {
+    width: 100%;
+    padding: 4px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+input:hover{
+  border: 1px solid #000!important;
+
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ffc107 !important;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+
+label.validation-error{
+    color: red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}

@@ -161,3 +161,13 @@ hr {
      width: 100%;
   }
 }
+div.modal{
+    position: absolute !important;
+    right: 50% !important;
+    left: 70%!important;
+    border: 2px solid #000 !important;
+}
+button.open-button{
+  left: 72% !important;
+  right: 40% !important;
+}

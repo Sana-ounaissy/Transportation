@@ -1,3 +1,4 @@
+
 function store(){
     let FirstName = document.getElementById('_FirstName');
     let LastName = document.getElementById('_LastName');
@@ -54,36 +55,82 @@ function store(){
         alert('please add 1 lovercase letter');
 
     }else{
-        localStorage.setItem('_FirstName', FirstName.value);
-        localStorage.setItem('_LastName', LastName.value);
-        localStorage.setItem('_Birthday', Birthday.value);
-        localStorage.setItem('Gender', Gender.value);
-        localStorage.setItem('_Email', Email.value);
-        localStorage.setItem('_PhoneNumber',  PhoneNumber.value);
-        localStorage.setItem('_Password', Password.value);
-        localStorage.setItem('SelectType', SelectType.value);
-        alert('Your account has been created');
-    }
-}
-console.log(localStorage.getItem("_FirstName"));
-console.log(localStorage.getItem("_LastName"));
-console.log(localStorage.getItem("_Birthday"));
-console.log(localStorage.getItem("Gender"));
-console.log(localStorage.getItem("_Email"));
-console.log(localStorage.getItem("_PhoneNumber"));
-console.log(localStorage.getItem("_Password"));
-console.log(localStorage.getItem("SelectType"));
+        // localStorage.setItem('_FirstName', FirstName.value);
+        // localStorage.setItem('_LastName', LastName.value);
+        // localStorage.setItem('_Birthday', Birthday.value);
+        // localStorage.setItem('Gender', Gender.value);
+        // localStorage.setItem('_Email', Email.value);
+        // localStorage.setItem('_PhoneNumber',  PhoneNumber.value);
+        // localStorage.setItem('_Password', Password.value);
+        // localStorage.setItem('SelectType', SelectType.value);
+        // alert('Your account has been created');
+       
+          
+         
+    
+           var allEntries = [];
+    allEntries.push(entry);
+            // Parse any JSON previously stored in allEntries
+         var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
+            if(existingEntries == null) existingEntries = [];
+           
+            var entry = {
+                "fname":document.getElementById("_FirstName").value,
+                "lname":document.getElementById('_LastName').value,
+                "birth":document.getElementById('_Birthday').value,
+                "gen":document.querySelector('input[name="gender"]:checked').value,
+                "em":document.getElementById('_Email').value,
+                "ph": document.getElementById('_PhoneNumber').value,
+                "pw": document.getElementById('_Password').value,
+                "selcted":document.getElementById('_SelectType').value,
+                
+            };
+            localStorage.setItem("entry", JSON.stringify(entry));
+            // Save allEntries back to local storage
+            existingEntries.push(entry);
+            localStorage.setItem('allEntries', JSON.stringify(existingEntries));
 
+        }
+} 
+let user = JSON.parse(localStorage.getItem('entry'));
+console.log(user.em);
+
+// console.log(localStorage.getItem("allEntries"));
+// console.log(localStorage.getItem("_FirstName"));
+// console.log(localStorage.getItem("_LastName"));
+// console.log(localStorage.getItem("_Birthday"));
+// console.log(localStorage.getItem("Gender"));
+// console.log(localStorage.getItem("_Email"));
+// console.log(localStorage.getItem("_PhoneNumber"));
+// console.log(localStorage.getItem("_Password"));
+// console.log(localStorage.getItem("SelectType"));
+
+// var __FOUND = -1;
+// for(var i=0; i<allEntries.length; i++) {
+//   if(allEntries[i].em == document.getElementById('_LoginEmail')) {
+//     // __FOUND is set to the index of the element
+//     __FOUND = i;
+//     break;
+//   }
+// }
+
+// On success __FOUND will contain the index of the element
+// On failure it will contain -1  
+// console.log(__FOUND); // 2
 
 function check(){
-    let storedEmail = localStorage.getItem('_Email');
-    let storedPassword = localStorage.getItem('_Password'); 
+    
+  let LoginEmail = document.getElementById('_LoginEmail').value;
+let LoginPassword = document.getElementById('_LoginPassword').value; 
+ let s = LoginEmail;
+  let a = LoginPassword;
+   
+   console.log(user.em);
+   console.log(user.selcted);
 
-   let LoginEmail = document.getElementById('_LoginEmail');
-   let LoginPassword = document.getElementById('_LoginPassword'); 
     //here we compare if its driver we take it to driver page if not we take it to passenger page
-    if(LoginEmail.value == storedEmail && LoginPassword.value == storedPassword){
-        if(localStorage.getItem("SelectType") == 'Driver'){
+    if(s == user.em &&  a == user.pw){
+         if(JSON.stringify(user.selcted) =='Driver'){
             window.location.replace("Driver2.html");
         }
         else{
@@ -154,4 +201,4 @@ function updatedProfilePassenger(){
     console.log(localStorage.getItem("_LastName"));
     console.log(localStorage.getItem("_PhoneNumber"));
     console.log(localStorage.getItem("_Birthday"));}
-}
+ } 

@@ -13,9 +13,13 @@
   .sidebar a {
     display: block;
     color: black;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 80px;
+    padding-right: 80px;
     text-decoration: none;
   }
+  
   
   /* Active/current link */
   .sidebar a.active {

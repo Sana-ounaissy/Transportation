@@ -130,7 +130,7 @@ let LoginPassword = document.getElementById('_LoginPassword').value;
 
     //here we compare if its driver we take it to driver page if not we take it to passenger page
     if(s == user.em &&  a == user.pw){
-         if(JSON.stringify(user.selcted) =='Driver'){
+         if(document.write(JSON.stringify(user.selcted)) =='Driver'){
             window.location.replace("Driver2.html");
         }
         else{

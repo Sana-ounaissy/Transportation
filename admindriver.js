@@ -1,6 +1,6 @@
 let printdrivershere = document.getElementById("tbodyadmindriver");
 let users = JSON.parse(localStorage.getItem("allEntries"));
-console.log(users.length);
+console.log(users[0]);
 
     
 for(let i=0; i<users.length; i++){
@@ -12,7 +12,7 @@ for(let i=0; i<users.length; i++){
                             + "<td>"+ users[i].ph + "</td>"
                             + "<td>"+ users[i].birth + "</td>" 
                             + "<td>"+ users[i].gen + "</td>"
-                            + '<td> <button onclick="Delete()" class="btn btn-outline-dark" type="button">Delete</button> </td>'
+                            + ' <td> <button onclick="Delete()" class="btn btn-outline-dark" type="button">Delete</button> </td> '
                             + "</tr>";
   
 
@@ -23,10 +23,7 @@ for(let i=0; i<users.length; i++){
       let td = event.target.parentNode; 
       let tr = td.parentNode; // the row to be removed
       tr.parentNode.removeChild(tr);
-     localStorage.removeItem(JSON.stringify(users[1]));
-     localStorage.removeItem(content);   
-
-     
+      
     }
 
 

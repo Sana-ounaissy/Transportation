@@ -9,7 +9,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body onload="displayMessages()" >
+<body >
   
     <div class="container-fluid">
       <div class="row content">
@@ -22,18 +22,39 @@
            
           </div>
         </div>
-     
-
-        <div class="col-sm-9 mt-5 mb-5">
-          <fieldset>
-         <label>Name:<h5 id="_h5Name"></h5></label> <br>
-        <label>Email: <h5 id="_h5Email"></h5></label> <br>
-         <label>Subject: <h5 id="_h5Subject"></h5></label> <br>
-         <label> Message:<h5 id="_h5Message"></h5></label> <br></fieldset>
-        </div>
-      </div>
-    </div>
-    <script src="ContactUs.js"></script>
     
+     <div class="col-sm-9">
+      <table style="border: 1px solid black;">
+
+        <thead>
+          <tr>
+            <th> Name </th>
+            <th> Email </th>
+            <th>Subject</th>
+            <th> Message </th>
+           
+          </tr>
+        </thead>
+        <tbody id="tbodymessages">
+
+
+        </tbody>
+      </table>
+     </div>
+    </div>
+    </div>
+    
+
+
+  </div>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+    <script src="ContactUs.js"></script>
+    <script src="message.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     

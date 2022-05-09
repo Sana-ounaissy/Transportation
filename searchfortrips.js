@@ -5,17 +5,19 @@ console.log(trips.length);
     
 for(let i=0; i<trips.length; i++){
    
-                printtripinfo.innerHTML += `<tr id='row1' onclick="window.location='yourtrip.html';"> <td>`+ trips[i].Id + "</td>" 
+                printtripinfo.innerHTML += `<tr id="row1" onclick="window.location='yourtrip.html';" > <td>`+ trips[i].Id + "</td>" 
                             + "<td>"+ trips[i].From + "</td>" 
                             + "<td>"+ trips[i].FirstStop + "</td>" 
-                            + "<td>"+trips[i].SecondStop + "</td>"
+                            + "<td>"+ trips[i].SecondStop + "</td>"
                             + "<td>"+ trips[i].To + "</td>" 
                             + "<td>"+ trips[i].DateAndTime + "</td>"
                             + "<td>"+ trips[i].DriversName + "</td>"
                             +`</tr> `
 
 }
-    function myFunction() {
+
+
+function myFunction() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
@@ -35,8 +37,28 @@ for(let i=0; i<trips.length; i++){
       }
     }
   }
-  console.log(document.getElementById("row1").value);
+  console.log(trips[0].From)
 }
+
+// 
+// 
+// 
+
+// $('#myTable').on('click', 'tr', function() {
+
+        
+//     var values = $(this).find('td').map(function() {
+//         return $(this).text();
+//     });
+
+//     console.log(values[0] + values[1] + values[2] + values[3]+ values[4] +  values[5] + values[6]);
+    
+//     window.location.replace("yourtrip.html");
+    
+
+// });
+
+
 
 
 

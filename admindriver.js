@@ -1,10 +1,10 @@
-let printdrivershere = document.getElementById(" tbodyadmindriver ");
-let users = JSON.parse(localStorage.getItem(" allEntries "));
+let printdrivershere = document.getElementById("tbodyadmindriver");
+let users = JSON.parse(localStorage.getItem("allEntries"));
 
     
 for(let i=0; i<users.length;i++){
    
-     if(users[i].selcted ==' Driver '){
+     if(users[i].selcted =='Driver'){
                 printdrivershere.innerHTML += "<tr> <td>" + users[i].fname + "</td> " 
                             + "<td>"+ users[i].lname + "</td> " 
                             + "<td>"+ users[i].em + "</td> " 

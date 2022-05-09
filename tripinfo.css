@@ -13,6 +13,7 @@
         text-align: left !important;
         background-color: #ffc107 !important;
         color: white !important;
+        text-align: center!important;
  } 
  /* The popup chat - hidden by default */
 .chat-popup {

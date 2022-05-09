@@ -19,11 +19,11 @@ function readFormData() {
     let formData = {};
     formData.Id = document.getElementById("_Id").value;
     formData.From = document.getElementById("_From").value;
-    formData.FirstStop= document.getElementById("_FirstStop").value;
-    formData.SecondStop = document.getElementById("_SecondStop").value;
+    formData.FirstStop= document.getElementById("_Firststop").value;
+    formData.SecondStop = document.getElementById("_Secondstop").value;
     formData.To = document.getElementById("_To").value;
-    formData.DateAndTime = document.getElementById("_DateAndTime").value;
-    formData.DriversName = document.getElementById("_Driver'sName").value;
+    formData.DateAndTime = document.getElementById("_Dateandtime").value;
+    formData.DriversName = document.getElementById("_Driversname").value;
     return formData; 
 }
 
@@ -54,11 +54,11 @@ function insertNewRecord(data) {
 function resetForm() {
     document.getElementById("_Id").value = "";
     document.getElementById("_From").value = "";
-    document.getElementById("_FirstStop").value = "";
-    document.getElementById("_SecondStop").value = "";
+    document.getElementById("_Firststop").value = "";
+    document.getElementById("_Secondstop").value = "";
     document.getElementById("_To").value = "";
-    document.getElementById("_DateAndTime").value = "";
-    document.getElementById("_Driver'sName").value = "";
+    document.getElementById("_Dateandtime").value = "";
+    document.getElementById("_Driversname").value = "";
     selectedRow = null;
 }
 
@@ -66,11 +66,11 @@ function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
     document.getElementById("_Id").value = selectedRow.cells[0].innerHTML;
     document.getElementById("_From").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("_FirstStop").value= selectedRow.cells[2].innerHTML;
-    document.getElementById("_SecondStop").value  = selectedRow.cells[3].innerHTML;
+    document.getElementById("_Firststop").value= selectedRow.cells[2].innerHTML;
+    document.getElementById("_Secondstop").value  = selectedRow.cells[3].innerHTML;
     document.getElementById("_To").value  = selectedRow.cells[4].innerHTML;
-    document.getElementById("_DateAndTime").value  = selectedRow.cells[5].innerHTML;
-    document.getElementById("_Driver'sName").value   = selectedRow.cells[6].innerHTML;
+    document.getElementById("_DateAandtime").value  = selectedRow.cells[5].innerHTML;
+    document.getElementById("_Driversname").value   = selectedRow.cells[6].innerHTML;
 }
 function updateRecord(formData) {
     selectedRow.cells[0].innerHTML = formData.Id;
@@ -103,6 +103,10 @@ function validate() {
     return isValid;
 }
 
+
+
+
+
 localStorage.setItem('items', JSON.stringify(newRow));
 const data = JSON.parse(localStorage.getItem('items'));
 console.log ("items");
@@ -112,5 +116,28 @@ const liMaker = (text) => {
   ul.appendChild(li);
 }
 
-localStorage.setItem('items', )
-console.log()
+localStorage.setItem('items',)
+
+function submittrip(){
+    var alltrips = [];
+alltrips.push(trip);
+        // Parse any JSON previously stored in allEntries
+     var existingtrips = JSON.parse(localStorage.getItem("alltrips"));
+        if(existingtrips == null) existingtrips = [];
+       
+        var trip= {
+            "Id":document.getElementById("_Id").value,
+            "From":document.getElementById('_From').value,
+            "FirstStop":document.getElementById('_Firststop').value,
+            "SecondStop":document.getElementById('_Secondstop').value,
+            "To":document.getElementById('_To').value,
+            "DateAndTime": document.getElementById('_Dateandtime').value,
+            "DriversName": document.getElementById('_Driversname').value,
+           
+            
+        };
+        localStorage.setItem("trip", JSON.stringify(trip));
+        // Save allEntries back to local storage
+        existingtrips.push(trip);
+        localStorage.setItem('alltrips', JSON.stringify(existingtrips));
+}

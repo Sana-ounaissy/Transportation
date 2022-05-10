@@ -37,7 +37,7 @@ function myFunction() {
       }
     }
   }
-  console.log(trips[0].From)
+  
 }
 
 // 

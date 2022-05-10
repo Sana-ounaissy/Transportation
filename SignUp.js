@@ -55,15 +55,15 @@ function store(){
         alert('please add 1 lovercase letter');
 
     }else{
-        // localStorage.setItem('_FirstName', FirstName.value);
-        // localStorage.setItem('_LastName', LastName.value);
-        // localStorage.setItem('_Birthday', Birthday.value);
-        // localStorage.setItem('Gender', Gender.value);
-        // localStorage.setItem('_Email', Email.value);
-        // localStorage.setItem('_PhoneNumber',  PhoneNumber.value);
-        // localStorage.setItem('_Password', Password.value);
-        // localStorage.setItem('SelectType', SelectType.value);
-        // alert('Your account has been created');
+        localStorage.setItem('_FirstName', FirstName.value);
+        localStorage.setItem('_LastName', LastName.value);
+        localStorage.setItem('_Birthday', Birthday.value);
+        localStorage.setItem('Gender', Gender.value);
+        localStorage.setItem('_Email', Email.value);
+        localStorage.setItem('_PhoneNumber',  PhoneNumber.value);
+        localStorage.setItem('_Password', Password.value);
+        localStorage.setItem('SelectType', SelectType.value);
+        alert('Your account has been created');
        
           
          
@@ -130,13 +130,13 @@ let LoginPassword = document.getElementById('_LoginPassword').value;
 
     //here we compare if its driver we take it to driver page if not we take it to passenger page
     if(s == user.em &&  a == user.pw){
-         if(document.write(JSON.stringify(user.selcted)) =='Driver'){
-            window.location.replace("Driver2.html");
+         if(user.selcted =='Driver'){
+          window.location.href="Driver2.html";
         }
         else{
-            window.location.replace("Passenger2.html");
-        }
-        alert('You are logged in.');
+             window.location.href="Passenger2.html";
+         }
+         alert('You are logged in.');
     }else{
         alert('Error on login');
     }

@@ -1,6 +1,6 @@
 body {
-  background-color: black !important;
-  background-image: url(/Assets/highway.jpg);
+  background-color: #000000 !important;
+   background-image: url(./Assets/road.jfif); 
   /* background-image: url("./Assets/blacmap.png"); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +21,7 @@ label {
   color: #ffcb15;
 }
 #colbg {
-  background-image: url(/Assets/paying.webp);
+  /* background-image: url(/Assets/paying.webp); */
   background-size: 140%;
 }
 .container {

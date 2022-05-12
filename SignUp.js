@@ -129,7 +129,10 @@ let LoginPassword = document.getElementById('_LoginPassword').value;
    console.log(user.selcted);
 
     //here we compare if its driver we take it to driver page if not we take it to passenger page
-    if(s == user.em &&  a == user.pw){
+    if(s == 'admin' && a == 'admin'){
+        window.location.href="admindriver.html";
+    }
+    else if(s == user.em &&  a == user.pw){
          if(user.selcted =='Driver'){
           window.location.href="Driver2.html";
         }

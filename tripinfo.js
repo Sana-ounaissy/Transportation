@@ -11,7 +11,7 @@ for(let i=0; i<trips.length; i++){
                             + "<td>"+trips[i].SecondStop + "</td>"
                             + "<td>"+ trips[i].To + "</td>" 
                             + "<td>"+ trips[i].DateAndTime + "</td>"
-                            + "<td>"+ trips[i].DriversName + "</td>"
+                            
                             +`<td> <button class="btn ms-1" onclick="document.getElementById('id01').style.display='block'">Done</button>
                             <div id="id01" class="modal">
                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>

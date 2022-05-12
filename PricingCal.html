@@ -97,6 +97,8 @@
         </div>
     </div>
     <script>
+        let wf = document.querySelector('input[name="WIFI"]:checked');
+        let ac = document.querySelector('input[name="AC"]:checked');
         const priceInput = document.querySelector('[name=price]');
         const quantityInput = document.querySelector('[name=quantity]');
         const total = document.querySelector('.total');
@@ -108,8 +110,12 @@
             const price = priceInput.value;
             const quantity = quantityInput.value;
             const cost = price * quantity;
+            if(wf=="yes"){
+                alert(wf.value)
+            }
+           
             console.log(cost);
-            total.innerText = cost.toFixed(2) + ' $';
+            total.innerText = cost.toFixed(1) + ' $';
         }
 
 

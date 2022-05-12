@@ -1,3 +1,12 @@
+/* body {
+  background-color: #00000096 !important;
+   background-image: url(./Assets/road.jfif); 
+  /* background-image: url("./Assets/blacmap.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+} */
+
 .btn:hover{
     border-color: #ffc107;
   }
@@ -63,7 +72,7 @@
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
 }
 
 /* Add some hover effects to buttons */

@@ -16,9 +16,16 @@ for(let i=0; i<users.length; i++){
 
                  +'       <span class="name mb-1 fw-500">'+ users[i].fname + "  "+ users[i].lname  + '</span>'
 
-                 +'       <div class="rate bg-dark py-3 text-white mt-3">'
+                 +'       <div class="rate bg-dark py-3 text-white mt-3" container="justify-content: center">'
                  +'           <h6 class="mb-0">Rate your driver</h6>'
-                 
+                 + `
+                                <div class="my-rating" style="align-items: center; justify-content: center">
+                <label style="display: flex; align-items: center; justify-content: center" class="rating-label"><strong> <code></code></strong>
+                    <input style="text-align: center;" class="rating" max="5" oninput="this.style.setProperty('--value', `+'`${this.valueAsNumber}`'+`)"
+                        step="0.5" style="--value:2.5" type="range" value="2.5">
+                </label>
+            </div>
+                 `
                 +'            <div class="buttons px-4 mt-0"> <button'
                +'                     class="btn btn-warning btn-block rating-submit">Submit</button>'
                +'             </div>'

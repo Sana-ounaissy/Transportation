@@ -25,7 +25,11 @@ for(let i=0; i<users.length;i++){
                            <label for="1">☆</label>
                             </div> ` 
                             + "</td> "
-                            + ' <td> <button onclick="Delete()" class="btn btn-outline-dark" type="button">Delete</button> </td>'
+                            + ` <td style="width: 20%">
+                                   <button style="margin-right:10px" onclick="Delete()" class="btn btn-outline-dark" type="button">Delete</button>
+                                    <div>  </div>        
+                                   <button onclick="alert("Driver Confirmed")" class="btn btn-outline-dark" type="button">Confirm</button>                            
+                                </td>`
                             + "</tr> ";
                 
 

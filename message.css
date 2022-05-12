@@ -1,7 +1,7 @@
 /* The side navigation menu */
 .sidebar {
     background-color: #f1f1f1;
-    position: fixed;
+    position: fixed!important;
     overflow: auto;
     height: 100%;
   }
@@ -32,7 +32,7 @@
   @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;
-      height: auto;
+      height:auto ;
       position: relative;
     }
     .sidebar a {float: left;}
@@ -40,10 +40,9 @@
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 700px) {
     .sidebar a {
       text-align: center;
-      float: none;
     }
   }
   
@@ -80,24 +79,33 @@
   /* Add padding and center-align text to the container */
   .container {
     text-align: center;
+    overflow-x: auto!important;
+    overflow-y: auto!important;
   }
   body > table{
     width: 80% !important;
     margin:auto;
+
 }
 
 
 table{
     border-collapse: collapse;
-    margin-top: 150px;
+
 }
 
 
 
-td, th {
+td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+}
+th{
+  border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #ffc107;
 }
 
 tr:nth-child(even),table.list thead>tr {
@@ -142,3 +150,12 @@ label.validation-error{
 .hide{
     display:none;
 }
+
+
+body{
+  padding: 0;
+  align-items:baseline;
+  justify-content:last baseline;
+  
+}
+

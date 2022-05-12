@@ -34,7 +34,7 @@ button.accordion-button{
   color: black;
 }
 h2.accordion-header{
-  background-color:#fff;
+  background-color:#fff!important;
   color: black;
 }
 button.accordion-button.collapsed:focus{

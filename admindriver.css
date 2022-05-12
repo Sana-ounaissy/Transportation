@@ -46,7 +46,7 @@
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 700px) {
     .sidebar a {
       text-align: center;
       float: none;
@@ -139,7 +139,7 @@
   position: static!important;; /* Stay in place */
   width: 30%  !important; /* Full width */
   height: 70% !important; /* Full height */
-  overflow: visible !important; /* Enable scroll if needed */
+  overflow: auto !important; /* Enable scroll if needed */
   background-color: #f1f1f1;
   padding-top: 50px;
 }
@@ -251,4 +251,8 @@ label.validation-error{
 
 .hide{
   display:none;
+}
+
+th{
+  background-color: #ffc107;
 }

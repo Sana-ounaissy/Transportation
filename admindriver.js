@@ -27,7 +27,7 @@ for(let i=0; i<users.length;i++){
                             + "</td> "
                             + ' <td> <button onclick="Delete()" class="btn btn-outline-dark" type="button">Delete</button> </td>'
                             + "</tr> ";
-  
+                
 
  }
   

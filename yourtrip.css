@@ -1,4 +1,12 @@
 
+
+body {
+ background-image: url("55.jpg");
+   background-color: #e31c1c;
+}
+
+
+
 .btn:focus { 
     outline: none !important;
     border-color: #ffc107 !important;

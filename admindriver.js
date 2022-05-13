@@ -12,18 +12,12 @@ for(let i=0; i<users.length;i++){
                             + "<td>"+ users[i].birth + "</td> " 
                             + "<td>"+ users[i].gen + "</td> "
                             + "<td>"+ `
-                            <div class="rating">
-                            <input type="radio" name="rating" value="5" id="5">
-                            <label for="5">☆</label>
-                            <input type="radio" name="rating" value="4" id="4">
-                             <label for="4">☆</label>
-                           <input type="radio" name="rating" value="3" id="3">
-                           <label for="3">☆</label>
-                           <input type="radio" name="rating" value="2" id="2">
-                           <label for="2">☆</label>
-                           <input type="radio" name="rating" value="1" id="1">
-                           <label for="1">☆</label>
-                            </div> ` 
+                            <div class="my-rating" style="align-items: center; justify-content: center">
+                            <label style="display: flex; align-items: center; justify-content: center" class="rating-label"><strong> <code></code></strong>
+                                <input style="text-align: center;" class="rating" max="5" oninput="this.style.setProperty('--value', `+'`${this.valueAsNumber}`'+`)"
+                                    step="0.5" style="--value:2.5" type="range" value="2.5">
+                            </label>
+                        </div>`
                             + "</td> "
                             + ` <td style="width: 20%">
                                    <button style="margin-right:10px" onclick="Delete()" class="btn btn-outline-dark" type="button">Delete</button>

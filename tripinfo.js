@@ -11,7 +11,7 @@ for(let i=0; i<trips.length; i++){
                             + "<td>"+trips[i].SecondStop + "</td>"
                             + "<td>"+ trips[i].To + "</td>" 
                             + "<td>"+ trips[i].DateAndTime + "</td>"
-                            + "<td>"+ trips[i].DriversName + "</td>"
+                            
                             +`<td> <button class="btn ms-1" onclick="document.getElementById('id01').style.display='block'">Done</button>
                             <div id="id01" class="modal">
                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
@@ -30,3 +30,23 @@ for(let i=0; i<trips.length; i++){
                              </tr>`
 
 }
+
+function driverChat(){
+var allChats = [];
+allChats.push(chat);
+        // Parse any JSON previously stored in allEntries
+     var existingChats = JSON.parse(localStorage.getItem("allChats"));
+        if(existingChats == null) existingChats = [];
+       
+        var chat = {
+           "liveChat":document.getElementById("Mess").value,
+         
+            };
+        localStorage.setItem("chat", JSON.stringify(chat));
+        // Save allEntries back to local storage
+        existingChats.push(chat);
+        localStorage.setItem('allChats', JSON.stringify(existingChats));
+let dr = JSON.parse(localStorage.getItem('chat'));
+console.log(dr.liveChat);}
+
+

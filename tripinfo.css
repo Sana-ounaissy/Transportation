@@ -1,11 +1,11 @@
-/* body {
+ body {
   background-color: #00000096 !important;
-   background-image: url(./Assets/road.jfif); 
-  /* background-image: url("./Assets/blacmap.png"); */
-  background-repeat: no-repeat;
+   background-image: url("/Assets/busy.jpg");
+   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px;
-} */
+} 
+
 
 .btn:hover{
     border-color: #ffc107;
@@ -180,4 +180,16 @@ div.modal{
 button.open-button{
   left: 72% !important;
   right: 40% !important;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    background-color: #f8f9fa99;
+}
+h3{
+  width: 10%;
+    font-size: calc(1.3rem + .6vw);
+    background-color: #f8f9faab;
 }

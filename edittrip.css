@@ -80,8 +80,8 @@ button:hover {
 /* Add padding and center-align text to the container */
 .container {
   text-align: center;
-  overflow-x:auto!important;
-  overflow-y:auto!important;
+  overflow:auto,
+
 }
 
 
@@ -133,15 +133,7 @@ input[type=submit]{
     cursor: pointer;
 }
 
-form div.form-action-buttons{
-    text-align: right;
-}
 
-
-label.validation-error{
-    color: red;
-    margin-left: 5px;
-}
 
 .hide{
     display:none;

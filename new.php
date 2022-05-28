@@ -1,4 +1,9 @@
+<?php
+require 'functionSignUp.php';
+ ?>
+
 <!DOCTYPE html>
+
 <html>
 <title>Home</title>
 <meta charset="UTF-8">
@@ -139,19 +144,19 @@
                     <div class="card-body">
 
 
-                      <form class="px-md-2">
-
+                      <form class="px-md-2" autocomplete="off" action="" method="post">
+                        <input type="hidden" id="action" value="register">
                         <div class="row row-space">
                           <div class="col-6">
                             <div class="input-group">
                               <label class="label">First Name </label>
-                              <input id="_FirstName" class="input--style-4" type="text" name="first_name">
+                              <input id="_FirstName" class="input--style-4" type="text" name="FirstName">
                             </div>
                           </div>
                           <div class="col-6">
                             <div class="input-group">
                               <label class="label">Last Name </label>
-                              <input id="_LastName" class="input--style-4" type="text" name="last_name">
+                              <input id="_LastName" class="input--style-4" type="text" name="LastName">
                             </div>
                           </div>
                         </div>
@@ -163,7 +168,7 @@
                             <div class="input-group">
 
                               <div class="input-group-icon">
-                                <input id="_Birthday" class="input--style-4 js-datepicker" type="date" name="birthday">
+                                <input id="_Birthday" class="input--style-4 js-datepicker" type="date" name="Birthday">
                                 <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                               </div>
                             </div>
@@ -174,11 +179,11 @@
 
                               <div class="p-t-10">
                                 <label class="radio-container m-r-45">Male
-                                  <input id="_Male" type="radio" checked="checked" name="gender" value="Male">
+                                  <input id="_Male" type="radio" checked="checked" name="Gender" value="Male">
                                   <span class="checkmark"></span>
                                 </label>
                                 <label class="radio-container">Female
-                                  <input id="_Female" type="radio" name="gender" value="Female">
+                                  <input id="_Female" type="radio" name="Gender" value="Female">
                                   <span class="checkmark"></span>
                                 </label>
                               </div>
@@ -191,13 +196,13 @@
                           <div class="col-6">
                             <div class="input-group">
                               <label class="label">Email</label>
-                              <input id="_Email" class="input--style-4" type="email" name="email">
+                              <input id="_Email" class="input--style-4" type="email" name="Email">
                             </div>
                           </div>
                           <div class="col-6">
                             <div class="input-group">
                               <label class="label">Phone Number</label>
-                              <input id="_PhoneNumber" class="input--style-4" type="text" name="phone">
+                              <input id="_PhoneNumber" class="input--style-4" type="text" name="PhoneNumber">
                             </div>
                           </div>
 
@@ -208,7 +213,7 @@
                           <div class="col-6">
                             <div class="input-group">
                               <label class="label">Password</label>
-                              <input id="_Password" class="input--style-4" type="password" name="password">
+                              <input id="_Password" class="input--style-4" type="password" name="Password">
                             </div>
                           </div>
                           <div class="col-6">
@@ -237,7 +242,7 @@
                             <div class="p-t-15">
 
                               <input class="btn btn--radius-2 btn--blue" id="_BtnSignUp" type="submit" value="SignUp"
-                                onclick="store()">Already have an account? <a href="./LogIn.html">LOGINp</a></input>
+                                onclick="signUp()">Already have an account? <a href="./LogIn.html">LOGINp</a></input>
 
                             </div>
                           </div>

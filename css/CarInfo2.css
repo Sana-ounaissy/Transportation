@@ -201,7 +201,7 @@ body {
   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  background-image: url(Assets/info.jpg);
+  background-image: url(../Assets/info.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;

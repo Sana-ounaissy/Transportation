@@ -1,7 +1,6 @@
 let printtripinfo = document.getElementById("_Tbodysearch");
 let trips = JSON.parse(localStorage.getItem("alltrips"));
 console.log(trips.length);
-
     
 for(let i=0; i<trips.length; i++){
    
@@ -15,8 +14,6 @@ for(let i=0; i<trips.length; i++){
                             +`</tr> `
 
 }
-
-
 function myFunction() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
@@ -39,24 +36,6 @@ function myFunction() {
   }
   
 }
-
-// 
-// 
-// 
-
-// $('#myTable').on('click', 'tr', function() {
-
-        
-//     var values = $(this).find('td').map(function() {
-//         return $(this).text();
-//     });
-
-//     console.log(values[0] + values[1] + values[2] + values[3]+ values[4] +  values[5] + values[6]);
-    
-//     window.location.replace("yourtrip.html");
-    
-
-// });
 
 
 

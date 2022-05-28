@@ -77,8 +77,8 @@
                                 <label for="quantity" style="color: rgb(255, 255, 255);">
                                     <span class="quantity-label" style="color: rgb(255, 255, 255);">1</span> Km
                                 </label>
-                                <input style="color: #ffcb15;" type="range" class="form-control" name="quantity"
-                                    value="100" min="100" max="10000" step="100">
+                                <input onchange="calculatePieCost()" style="color: #ffcb15;" type="range"
+                                    class="form-control" name="quantity" value="100" min="100" max="10000" step="100">
                             </div>
                         </form>
 
@@ -110,10 +110,10 @@
             const price = priceInput.value;
             const quantity = quantityInput.value;
             const cost = price * quantity;
-            if(wf=="yes"){
+            if (wf == "true") {
                 alert(wf.value)
             }
-           
+            console.log(wf.value);
             console.log(cost);
             total.innerText = cost.toFixed(1) + ' $';
         }

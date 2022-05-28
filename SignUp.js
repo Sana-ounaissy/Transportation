@@ -121,7 +121,7 @@ console.log(user.em);
 function check(){
     
   let LoginEmail = document.getElementById('_LoginEmail').value;
-let LoginPassword = document.getElementById('_LoginPassword').value; 
+    let LoginPassword = document.getElementById('_LoginPassword').value; 
  let s = LoginEmail;
   let a = LoginPassword;
    

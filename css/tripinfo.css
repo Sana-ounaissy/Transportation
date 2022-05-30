@@ -1,6 +1,6 @@
  body {
   background-color: #00000096 !important;
-   background-image: url("/Assets/busy.jpg");
+   background-image: url("../Assets/tripinfo.jpg");
    background-repeat: no-repeat;
   background-size: cover;
   padding: 30px;
@@ -20,6 +20,7 @@
         padding-top: 12px !important;
         padding-bottom: 12px !important;
         text-align: left !important;
+        width: 70px !important;
         background-color: #ffc107 !important;
         color: white !important;
         text-align: center!important;

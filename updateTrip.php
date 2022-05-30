@@ -4,9 +4,9 @@ require 'dbconnection.php';
 //to get details 
 if(isset($_POST['updateid'])){
 
-    $user_id = $_POST['updateid'];
+    $tripid = $_POST['updateid'];
 
-    $sql = "select * from `trips` where Trip_ID=$user_id";
+    $sql = "select * from `trips` where Trip_ID=$tripid";
     $result = mysqli_query($conn,$sql);
     $response = array();
     while($row=mysqli_fetch_assoc($result)){
@@ -29,7 +29,7 @@ if(isset($_POST['hiddendata'])){
     $To = $_POST['updateTo'];
     $Date = $_POST['updateDate'];
 
-    $sql= "update `trips` set From='$From', Firststop='$FirstStop', Secondstop='$SecondStop', To='$To', Dateandtime='$Date' where Trip_ID='$uniqueid' ";
+    $sql= "update `trips` set Fromdestination='$From', Firststop='$FirstStop', Secondstop='$SecondStop', Todestination='$To', Dateandtime='$Date' where Trip_ID='$uniqueid' ";
     $result = mysqli_query($conn,$sql);
 }
 

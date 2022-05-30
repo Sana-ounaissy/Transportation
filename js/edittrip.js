@@ -10,11 +10,11 @@ function addtrip(){
         url:"insertTrip.php",
         type:'post',
         data: {
-            FromSend: FromAdd,
-            FirstStopSend: FirstStopAdd,
-            SecondStopSend: SecondStopAdd,
-            ToSend: ToAdd,
-            DateSend: DateAdd
+            FromSend:FromAdd,
+            FirstStopSend:FirstStopAdd,
+            SecondStopSend:SecondStopAdd,
+            ToSend:ToAdd,
+            DateSend:DateAdd
         },
         success:function(data,status){
             $('#completeModal').modal('hide');
@@ -68,13 +68,13 @@ function GetDetails(updateid){
     $.post("updateTrip.php",
     {updateid:updateid},
     function(data,status){
-        let userid=JSON.parse(data);
+        let tripid=JSON.parse(data);
         console.log(data);
-        $('#updateFrom').val(userid.From);
-        $('#updateFirstStop').val(userid.FirstStop);
-        $('#updateSecondStop').val(userid.SecondStop);
-        $('#updateTo').val(userid.To);
-        $('#updateDate').val(userid.Date);
+        $('#updateFrom').val(tripid.Fromdestination);
+        $('#updateFirstStop').val(tripid.Firststop);
+        $('#updateSecondStop').val(tripid.Secondstop);
+        $('#updateTo').val(tripid.Todestination);
+        $('#updateDate').val(tripid.Dateandtime);
 
 
     }

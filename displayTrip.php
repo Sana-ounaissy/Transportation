@@ -21,10 +21,10 @@ if(isset($_POST['displaySend'])){
   $number=1;
   while($row=mysqli_fetch_assoc($result)){
    $id=$row['Trip_ID'];   
-   $From=$row['From'];  
+   $From=$row['Fromdestination'];  
    $FirstStop=$row['Firststop'];
    $SecondStop=$row['Secondstop'];
-   $To=$row['To'];
+   $To=$row['Todestination'];
    $Date=$row['Dateandtime'];
 
    $table.='<tr>

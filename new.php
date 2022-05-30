@@ -1,6 +1,3 @@
-<?php
-require 'functionSignUp.php';
- ?>
 
 <!DOCTYPE html>
 
@@ -179,11 +176,11 @@ require 'functionSignUp.php';
 
                               <div class="p-t-10">
                                 <label class="radio-container m-r-45">Male
-                                  <input id="_Male" type="radio" checked="checked" name="Gender" value="Male">
+                                  <input id="_Male" class="Gender" type="radio" checked="checked" name="Gender" value="Male">
                                   <span class="checkmark"></span>
                                 </label>
                                 <label class="radio-container">Female
-                                  <input id="_Female" type="radio" name="Gender" value="Female">
+                                  <input id="_Female" class="Gender" type="radio" name="Gender" value="Female">
                                   <span class="checkmark"></span>
                                 </label>
                               </div>
@@ -242,7 +239,7 @@ require 'functionSignUp.php';
                             <div class="p-t-15">
 
                               <input class="btn btn--radius-2 btn--blue" id="_BtnSignUp" type="submit" value="SignUp"
-                                onclick="signUp()">Already have an account? <a href="./LogIn.html">LOGINp</a></input>
+                                onclick="insertUser()">Already have an account? <a href="./LogIn.html">LOGINp</a></input>
 
                             </div>
                           </div>

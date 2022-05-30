@@ -3,7 +3,7 @@ require 'dbconnection.php';
 
 if(isset($_POST['displaySend'])){
     $table = '<table class="table">
-  <thead>
+  <thead class="table-dark">
     <tr>
       <th scope="col">ID</th>
       <th scope="col">From</th>
@@ -15,10 +15,10 @@ if(isset($_POST['displaySend'])){
     </tr>
   </thead>';
 
+  
   $sql="Select * from `trips`";
   $result=mysqli_query($conn,$sql);
-  
-  $number=1;
+$number=1;
   while($row=mysqli_fetch_assoc($result)){
    $id=$row['Trip_ID'];   
    $From=$row['Fromdestination'];  
@@ -35,8 +35,8 @@ if(isset($_POST['displaySend'])){
    <td>'.$To.'</td>
    <td>'.$Date.'</td>
    <td> 
-   <button class="btn btn-dark" onclick="GetDetails('.$id.')">Update</button>
-   <button class="btn btn-danger" onclick="DeleteUser('.$id.')">Delete</button>
+   <button class="btn btn-warning" onclick="GetDetails('.$id.')">Update</button>
+   <button class="btn btn-dark" onclick="DeleteUser('.$id.')">Delete</button>
    </td>
 
   </tr>';

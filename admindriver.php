@@ -21,45 +21,20 @@
           <p<h3><b style="color: black;">You</b><b style="color: #ffc107;">Move</b></h3>
             </p>
             <a class="active" href="admindriver.html">Drivers</a>
-            <a href="edittrip.html">Trips</a>
+            <a href="edittrip.php">Trips</a>
             <a href="message.html">Messages</a>
         </div>
       </div>
 
       <div class="col-sm-9">
-        <table id="table1" style="border: 1px solid black;">
-
-          <thead>
-            <tr>
-              <th>First Name </th>
-              <th> Last Name </th>
-              <th> Email </th>
-              <th> Phone Number </th>
-              <th> Birthday </th>
-              <th> Gender </th>
-              <th> RATING</th>
-              <th> </th>
-            </tr>
-          </thead>
-
-          <tbody id="tbodyadmindriver"> </tbody>
-        </table>
+        <div id="displayDataTable"></div>
       </div>
 
 
-    </div>
-  </div>
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid black;
-      }
-    </style>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/admindriver.js"></script>
 </body>
 

@@ -28,7 +28,7 @@
             <div class="row">
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <a href="EditPassenger.html">
+                    <a href="EditPassenger.php">
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">

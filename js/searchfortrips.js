@@ -1,19 +1,19 @@
-let printtripinfo = document.getElementById("_Tbodysearch");
-let trips = JSON.parse(localStorage.getItem("alltrips"));
-console.log(trips.length);
+// let printtripinfo = document.getElementById("_Tbodysearch");
+// let trips = JSON.parse(localStorage.getItem("alltrips"));
+// console.log(trips.length);
     
-for(let i=0; i<trips.length; i++){
+// for(let i=0; i<trips.length; i++){
    
-                printtripinfo.innerHTML += `<tr id="row1" onclick="window.location='yourtrip.html';" > <td>`+ trips[i].Id + "</td>" 
-                            + "<td>"+ trips[i].From + "</td>" 
-                            + "<td>"+ trips[i].FirstStop + "</td>" 
-                            + "<td>"+ trips[i].SecondStop + "</td>"
-                            + "<td>"+ trips[i].To + "</td>" 
-                            + "<td>"+ trips[i].DateAndTime + "</td>"
-                            + "<td>"+ trips[i].DriversName + "</td>"
-                            +`</tr> `
+//                 printtripinfo.innerHTML += `<tr id="row1" onclick="window.location='yourtrip.html';" > <td>`+ trips[i].Id + "</td>" 
+//                             + "<td>"+ trips[i].From + "</td>" 
+//                             + "<td>"+ trips[i].FirstStop + "</td>" 
+//                             + "<td>"+ trips[i].SecondStop + "</td>"
+//                             + "<td>"+ trips[i].To + "</td>" 
+//                             + "<td>"+ trips[i].DateAndTime + "</td>"
+//                             + "<td>"+ trips[i].DriversName + "</td>"
+//                             +`</tr> `
 
-}
+// }
 function myFunction() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
@@ -37,6 +37,26 @@ function myFunction() {
   
 }
 
+function displaySearch(){
+    let displayData="true";
+    $.ajax({
+        url:"displaytrips.php",
+        type:"post",
+        data:{
+            displaySend:displayData
+        },
+        success:function(data,status){
+            data = JSON.parse(data);
+            console.log(data);
+            $('#_Tbodysearch').html(data);
+
+        }
+    })
+}
+
+function clickbro(){
+  window.location.href ="yourtrip.html";
+}
 
 
 

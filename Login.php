@@ -18,7 +18,7 @@ if ($result->num_rows === 1) {
     //.$_SESSION['admin']
 } elseif ($result->num_rows > 1) {
       //there should not be more than one rows with same credentials. Two rows with same (username, password), Make username primary key.
-      throw new Exception("Multiple entry with same username and password in admin table");
+      throw new Exception("Multiple entry with same username and password in driver table");
 } else {
     //Given credentials are not in admin table, check user table.
     $sql1 = " SELECT * FROM passenger WHERE Email= '$email' AND Passward = '$passw'";
@@ -33,7 +33,7 @@ if ($result->num_rows === 1) {
     else {
         //Nither in User nor in admin table
         
-        header("location:Login.php");
+        header("location:Login.html");
     }
     
      

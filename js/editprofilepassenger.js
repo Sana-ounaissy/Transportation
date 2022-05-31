@@ -1,7 +1,10 @@
 function editProfilePassenger(updateid){
+    let sessionadd=$('#sessionresult').val();
+    console.log(sessionadd);
 
     $.post("getPassengerDetails.php",
-    {updateid:updateid},
+    {updateid:updateid,
+    sessionsend:sessionadd},
     function(data,status){
         let userid=JSON.parse(data);
         console.log(data);

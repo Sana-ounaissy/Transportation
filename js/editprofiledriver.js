@@ -1,7 +1,10 @@
 function editProfileDriver(updateid){
+    let sessionadd=$('#sessionresult').val();
+    console.log(sessionadd);
 
     $.post("getDriverDetails.php",
-    {updateid:updateid},
+    {updateid:updateid,
+    sessionsend:sessionadd},
     function(data,status){
         let userid=JSON.parse(data);
         console.log(data);
@@ -10,6 +13,7 @@ function editProfileDriver(updateid){
         $('#_InputLastName').val(userid.Lastname);
         $('#_InputPhoneNumber').val(userid.Phonenb);
         $('#_InputBirthday').val(userid.Dateofbirth);
+        
 
     }
     )

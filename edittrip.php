@@ -16,7 +16,7 @@
         <div class="col-sm-3">
           <div class="sidebar">
             <p<h3><b style="color: black;">You</b><b style="color: #ffc107;">Move</b></h3></p>
-            <a href="admindriver.html">Drivers</a>
+            <a href="admindriver.php">Drivers</a>
             <a class="active" href="edittrip.html">Trips</a>
             <a href="message.html">Messages</a>
            
@@ -24,7 +24,7 @@
         </div>
      
 
-        <div class="col-sm-4 mt-5 mb-5">
+        <div class="col-sm-9 mt-5 mb-5">
     
         <div class="modal fade" id="completeModal">
         <div class="modal-dialog">
@@ -69,8 +69,8 @@
 
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addtrip()">Submit</button>
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal" onclick="addtrip()">Submit</button>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
             </div>
 
             </div>
@@ -120,8 +120,8 @@
 
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="updateDetails()">Update</button>
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal" onclick="updateDetails()">Update</button>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
                 <input type="hidden" id="hiddendata">
             </div>
 
@@ -129,11 +129,8 @@
         </div>
         </div>    
     
-    <div class="container my-3">
-        <h1>PHP Crud operations with ajax</h1>
+    <div class="container">
         <button class="btn btn-dark my-4"  data-bs-toggle="modal" data-bs-target="#completeModal">Add new user</button>
-
-        
         <div id="displayDataTable">
              
         </div>

@@ -1,4 +1,26 @@
 
+$(document).ready(function(){
+    displayData();
+});
+
+function displayData(){
+    let displayData="true";
+    $.ajax({
+        url:"displayTrip.php",
+        type:'post',
+        data:{
+            displaySend:displayData
+        },
+        success:function(data,status){
+            data = JSON.parse(data)
+            $('#displayDataTable').html(data);
+
+        }
+    })
+}
+
+////////////////////////////////////////////////////
+
 function addtrip(){
     let FromAdd = $('#From').val();
     let FirstStopAdd = $('#FirstStop').val();
@@ -25,28 +47,6 @@ function addtrip(){
 }
 
 /////////////////////////////////////////////////////////////////////
-
-$(document).ready(function(){
-    displayData();
-});
-
-function displayData(){
-    let displayData="true";
-    $.ajax({
-        url:"displayTrip.php",
-        type:"post",
-        data:{
-            displaySend:displayData
-        },
-        success:function(data,status){
-            data = JSON.parse(data)
-            $('#displayDataTable').html(data);
-
-        }
-    })
-}
-
-////////////////////////////////////////////////////
 
 function DeleteUser(deleteid){
     $.ajax({

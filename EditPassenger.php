@@ -14,7 +14,11 @@
 </head>
 
 <body onload="editProfilePassenger(1)">
-
+<?php
+session_start();
+$email = isset($_SESSION["passenger"]) ? $_SESSION["passenger"] : "Anonymous"; //ternary operator
+echo "<input  id='sessionresult' value='$email'></input>"; 
+?>
     <div class="container-xl px-4 mt-4">
         <header id="header" class=" fixed-top header-transparent">
             <h1 class="logo" style="color: #ffff;">You<span style="color: #ffcb15;">Move</span></a></h1>

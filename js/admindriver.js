@@ -31,4 +31,10 @@ function Deletedriver(deleteid){
         }
 
     });
-}
+} 
+
+function myFunction() {
+    let x=$("#btn").val('Confirmed');
+    $("#btn").css('backgroundColor','green');
+
+  }

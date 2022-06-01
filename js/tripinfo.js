@@ -13,22 +13,21 @@ function displayData(){
       }
   })
 }
-// function driverChat(){
-// var allChats = [];
-// allChats.push(chat);
-//         // Parse any JSON previously stored in allEntries
-//      var existingChats = JSON.parse(localStorage.getItem("allChats"));
-//         if(existingChats == null) existingChats = [];
-       
-//         var chat = {
-//            "liveChat":document.getElementById("Mess").value,
-         
-//             };
-//         localStorage.setItem("chat", JSON.stringify(chat));
-//         // Save allEntries back to local storage
-//         existingChats.push(chat);
-//         localStorage.setItem('allChats', JSON.stringify(existingChats));
-// let dr = JSON.parse(localStorage.getItem('chat'));
-// console.log(dr.liveChat);}
+
+function chatDriver(){
+let sessionadd=$('#sessionchat').val();
+let messageadd=$('#Mess').val();
+$.ajax({
+    url:"ChatSendDriver.php",
+    type:"post",
+    data:{
+        sessionsend:sessionadd,
+        messagesend:messageadd
+    },
+    success:function(data,status){
+      console.log(sessionadd); 
+    }
+    })
 
 
+}

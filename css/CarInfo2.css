@@ -421,6 +421,7 @@ form{
 input {
   outline: none;
   margin: 0;
+  padding: auto;
   border: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

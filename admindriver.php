@@ -20,14 +20,14 @@
         <div class="sidebar">
           <p<h3><b style="color: black;">You</b><b style="color: #ffc107;">Move</b></h3>
             </p>
-            <a class="active" href="admindriver.html">Drivers</a>
+            <a class="active" href="admindriver.php">Drivers</a>
             <a href="edittrip.php">Trips</a>
-            <a href="message.html">Messages</a>
+            <a href="message.php">Messages</a>
         </div>
       </div>
 
       <div class="col-sm-9">
-        
+      
         <div id="displayDataTable"></div>
       </div>
 

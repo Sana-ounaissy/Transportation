@@ -11,10 +11,10 @@ if(isset($_POST['displaySend'])){
     while($row=mysqli_fetch_assoc($result)){
      
    $_Id=$row['Trip_ID'];  
-   $_From=$row['From'];
+   $_From=$row['Fromdestination'];
    $_Firststop=$row['Firststop'];
    $_Secondstop=$row['Secondstop'];
-   $_To=$row['To'];
+   $_To=$row['Todestination'];
    $_Dateanatime=$row['Dateandtime'];
     $URL="yourtrip.html";
 

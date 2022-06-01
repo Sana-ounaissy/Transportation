@@ -10,6 +10,11 @@
 </head>
 
 <body onload="displayData()">
+  <?php
+session_start();
+$email = isset($_SESSION["driver"]) ? $_SESSION["driver"] : "Anonymous"; //ternary operator
+echo "<input type='hidden'  id='sessionchat' value='$email'></input>"; 
+?>
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 ms-1">
@@ -54,7 +59,7 @@
             <label for="msg"><b>Message</b></label>
             <textarea id="Mess" placeholder="Type message.." name="msg" required></textarea>
 
-            <button onclick="driverChat()" class="btn">Send</button>
+            <button onclick="chatDriver()" class="btn">Send</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
           </form>
         </div>

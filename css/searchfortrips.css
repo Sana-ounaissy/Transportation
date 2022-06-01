@@ -28,7 +28,7 @@ section {
   display: block;
 }
 .s002{
-  background-image:url(photo1.jpg);
+  background-image:url(../Assets/busy.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -1493,7 +1493,7 @@ span.flatpickr-weekday {
   -ms-flex-align: center;
       align-items: center;
   font-family: 'Poppins', sans-serif;
-  background-image:url(photo1.jpg) !important;
+  background-image:url(../Assets/busb.jpg) !important;
 background-repeat: no-repeat !important;
 background-size: cover !important;
 }

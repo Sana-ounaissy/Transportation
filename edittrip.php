@@ -17,8 +17,8 @@
           <div class="sidebar">
             <p<h3><b style="color: black;">You</b><b style="color: #ffc107;">Move</b></h3></p>
             <a href="admindriver.php">Drivers</a>
-            <a class="active" href="edittrip.html">Trips</a>
-            <a href="message.html">Messages</a>
+            <a class="active" href="edittrip.php">Trips</a>
+            <a href="message.php">Messages</a>
            
           </div>
         </div>

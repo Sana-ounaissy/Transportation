@@ -141,19 +141,27 @@
                     <div class="card-body">
 
 
-                      <form class="px-md-2" autocomplete="off" action="" method="post">
+                      <form  basicBootstrapForm class="px-md-2" autocomplete="off" method="post" class="form-horizontal"
+    data-fv-framework="bootstrap"
+    data-fv-icon-valid="glyphicon glyphicon-ok"
+    data-fv-icon-invalid="glyphicon glyphicon-remove"
+    data-fv-icon-validating="glyphicon glyphicon-refresh">
                         <input type="hidden" id="action" value="register">
                         <div class="row row-space">
                           <div class="col-6">
                             <div class="input-group">
                               <label class="label">First Name </label>
-                              <input id="_FirstName" class="input--style-4" type="text" name="FirstName">
+                              <input id="_FirstName" class="input--style-4" type="text" name="FirstName" data-fv-row=".col-xs-4"
+                data-fv-notempty="true"
+                data-fv-notempty-message="The last name is required" >
                             </div>
                           </div>
                           <div class="col-6">
                             <div class="input-group">
                               <label class="label">Last Name </label>
-                              <input id="_LastName" class="input--style-4" type="text" name="LastName">
+                              <input id="_LastName" class="input--style-4" type="text" name="LastName"data-fv-row=".col-xs-4"
+                data-fv-notempty="true"
+                data-fv-notempty-message="The first name is required">
                             </div>
                           </div>
                         </div>
@@ -180,7 +188,8 @@
                                   <span class="checkmark"></span>
                                 </label>
                                 <label class="radio-container">Female
-                                  <input id="_Female" class="Gender" type="radio" name="Gender" value="Female">
+                                  <input id="_Female" class="Gender" type="radio" name="Gender" value="Female"  data-fv-notempty="true"
+                        data-fv-notempty-message="The gender is required">
                                   <span class="checkmark"></span>
                                 </label>
                               </div>
@@ -193,7 +202,11 @@
                           <div class="col-6">
                             <div class="input-group">
                               <label class="label">Email</label>
-                              <input id="_Email" class="input--style-4" type="email" name="Email">
+                              <input id="_Email" class="input--style-4" type="email" name="Email"  data-fv-notempty="true"
+                data-fv-notempty-message="The email address is required"
+
+                data-fv-emailaddress="true"
+                data-fv-emailaddress-message="The input is not a valid email address">
                             </div>
                           </div>
                           <div class="col-6">
@@ -210,7 +223,12 @@
                           <div class="col-6">
                             <div class="input-group">
                               <label class="label">Password</label>
-                              <input id="_Password" class="input--style-4" type="password" name="Password">
+                              <input id="_Password" class="input--style-4" type="password" name="Password"  data-fv-notempty="true"
+                data-fv-notempty-message="The password is required"
+
+                data-fv-different="true"
+                data-fv-different-field="username"
+                data-fv-different-message="The password cannot be the same as username">
                             </div>
                           </div>
                           <div class="col-6">
@@ -238,9 +256,10 @@
                             </div>
                             <div class="p-t-15">
 
-                              <input class="btn btn--radius-2 btn--blue" id="_BtnSignUp" type="submit" value="SignUp"
-                                onclick="insertUser()">Already have an account? <a href="./LogIn.html">LOGINp</a></input>
-
+                              <input type="button" class="btn btn--radius-2 btn--blue" id="_BtnSignUp"  value="SignUp"
+                                onclick="insertUser()">Already have an account? <a href="./LogIn.html">LOGIN</a></input>
+<div style="background:white" id="msg">
+</div>
                             </div>
                           </div>
 
@@ -569,6 +588,7 @@
           </script>
         <script src="./js/ContactUs.js"></script>
         <script src="./js/SignUp.js"></script>
+       
        
 </body>
 

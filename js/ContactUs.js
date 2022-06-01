@@ -114,15 +114,29 @@ function insertContactus(){
 function displayData(){
     let displayData="true";
     $.ajax({
-        url:"displaydrivers.php",
+        url:"displayContactUs.php",
         type:"post",
         data:{
             displaySend:displayData
         },
         success:function(data,status){
             data = JSON.parse(data);
-            $('#DisplayDriversTable').html(data);
+            $('#DisplayContactUsTable').html(data);
+
+        }
+    })
+     let displayChat="true";
+    $.ajax({
+        url:"displayMessageDriver.php",
+        type:"post",
+        data:{
+            displayChatSend:displayChat
+        },
+        success:function(data,status){
+            data = JSON.parse(data);
+            $('#DisplayDriverMessage').html(data);
 
         }
     })
 }
+//hon display lla messages t3ul l driver

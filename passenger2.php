@@ -53,7 +53,7 @@
 
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <a href="searchfortrips.html">
+                    <a href="searchfortrips.php">
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
@@ -75,7 +75,7 @@
 
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <a href="Rating.html">
+                    <a href="Rating.php">
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">

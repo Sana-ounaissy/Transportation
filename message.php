@@ -19,15 +19,18 @@
         <div class="sidebar">
           <p<h3><b style="color: black;">You</b><b style="color: #ffc107;">Move</b></h3>
             </p>
-            <a href="admindriver.html">Drivers</a>
-            <a href="edittrip.html">Trips</a>
-            <a class="active" href="message.html">Messages</a>
+            <a href="admindriver.php">Drivers</a>
+            <a href="edittrip.php">Trips</a>
+            <a class="active" href="message.php">Messages</a>
 
         </div>
       </div>
-
-      <div class="col-sm-9 mt-5" id="DisplayDriversTable">
-        <!-- <table style="border: 1px solid black;">
+ 
+      <div class="col-sm-8 mt-5" id="DisplayContactUsTable">
+      
+      
+      
+      <!-- <table style="border: 1px solid black;">
 
           <thead>
 
@@ -55,13 +58,11 @@
       <br>
     </div>
     <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-6">
-        <div class="container" id="container">
-
-        </div>
+   
+      <div class="col-sm-3">
+       
       </div>
-      <div class="col-sm-4"></div>
+      <div class="col-sm-8" id ="DisplayDriverMessage"></div>
     </div>
 
   </div>

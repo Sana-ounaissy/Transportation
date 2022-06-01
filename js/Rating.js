@@ -46,8 +46,9 @@ function displayData(){
             displaySend:displayData
         },
         success:function(data,status){
-           
-             console.log(data);
+            data = JSON.parse(data);
+            
+
             $('#rowdriverrating').html(data);
 
         }
@@ -55,6 +56,32 @@ function displayData(){
 }
 
 
+
+function getRating(driverid){
+    // let val1 = $("input[name=stars]").val();
+    // console.log(val1);
+    console.log(driverid);
+    $("input[name=stars]").change(function() {
+    let ratingadd = this.value;
+    console.log('New star rating: ' + ratingadd);
+
+            $.ajax({
+        url:"sendrating.php",
+        type:'post',
+        data:{
+            driverid:driverid,
+            ratingadd:ratingadd
+        },
+        success:function(data,status){
+            
+        }
+
+    });
+
+});
+
+
+}
 
             
  

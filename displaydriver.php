@@ -2,7 +2,7 @@
 require 'dbconnection.php';
 
 if(isset($_POST['displaySend'])){
-    $table = '<table class="table">
+    $table = '<table class="table mt-5 ms-1">
   <thead class="table-dark" >
     <tr>
       <th scope="col">ID</th>

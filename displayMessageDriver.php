@@ -9,7 +9,7 @@ if(isset($_POST['displayChatSend'])){
       <th scope="col">Email</th>
       
      
-     <th scope="col">Message</th>
+     <th scope="col">Driver Chat</th>
       
     
      

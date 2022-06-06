@@ -24,7 +24,7 @@
         </div>
      
 
-        <div class="col-sm-9 mt-5 mb-5">
+        <div class="col-sm-8 mt-5 mb-5">
     
         <div class="modal fade" id="completeModal">
         <div class="modal-dialog">
@@ -33,7 +33,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Add Users</h4>
+                <h4 class="modal-title">Add Trip</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
@@ -130,7 +130,7 @@
         </div>    
     
     <div class="container">
-        <button class="btn btn-dark my-4"  data-bs-toggle="modal" data-bs-target="#completeModal">Add new user</button>
+        <button class="btn btn-dark my-4"  data-bs-toggle="modal" data-bs-target="#completeModal">Add new trip</button>
         <div id="displayDataTable">
              
         </div>
